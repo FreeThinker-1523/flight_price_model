@@ -1,18 +1,46 @@
 <html>
     <head>
-        <title>Flight Price Data</title>
+        <title>Flight Price Predictor</title>
         <link rel="stylesheet" href="main.css">
     </head>
-
+ 
     <body>
-       <div class="nav">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-       </div>
-
-       <div>
-        <p>Yo!</p>
-       </div>
-    </body>
+       <div class="card">
+            <h1>✈ Flight Price Estimator</h1>
+        
+            <form id="priceForm">
+                <label for="airline">Airline</label>
+                <select id="airline">
+                    <option value="Vistara">Vistara</option>
+                    <option value="Air_India">Air India</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="GO_FIRST">Go First</option>
+                    <option value="SpiceJet">Spicejet</option>
+                </select>
+ 
+                <label for="class">Class</label>
+                <select id="class">
+                    <option value="Economy">Economy</option>
+                    <option value="Business">Business</option>
+                </select>
+ 
+                <label for="departure_time">Departure Time</label>
+                <select id="departure_time">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>            
+                    <option value="Evening">Evening</option> 
+                    <option value="Night">Night</option>  
+                    <option value="Early_Morning">Early Morning</option> 
+                    <option value="Late_Night">Late Night</option>
+                </select>
+ 
+                <label for="days_left">Days Left For Departure</label>
+                <input type="number" id="days_left" min="1" max="60" value="15">
+                <button type="submit" id="submitBtn">Predict Prices</button>
+            </form>
+        <div id="result"></div>
+        <div id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
