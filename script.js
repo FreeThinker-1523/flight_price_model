@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/predict';
+const API_URL = 'https://flight-price-model.onrender.com';
 
 document.getElementById('priceForm').addEventListener('submit', async function(e) {
   e.preventDefault();
