@@ -9,6 +9,9 @@ CORS(app)
 model = joblib.load('flight_model.pkl')
 model_columns = joblib.load('model_columns.pkl')
 
+@app.route('/')
+def home():
+    return jsonify({"status": "Backend is walking!"})
 @app.route('/predict', methods=['POST'])
 
 def predict():
