@@ -12,3 +12,5 @@ clean_dataset.csv  →  notebook.ipynb →  flight_model.pkl + model_columns.pkl
 Backend: Python, Flask, scikit-learn, pandas
 Frontend: HTML, CSS, vanilla JavaScript,
 Model: RandomForestRegressor (scikit-learn)
+
+# Hoested on Render
